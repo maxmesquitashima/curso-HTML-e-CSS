@@ -1,11 +1,22 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Passions+Conflict&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Passions+Conflict&display=swap');
+
+:root{
+    --font1: verdana, tahoma, sans-serif;
+    --font2: "Passero One", sans-serif;
+    --font3: "Passions Conflict", cursive;
+}
 
 *{
+    font-size: 1em;
     margin: 0px;
     padding: 0px;
     
 }
 html, body {
+    font-family: var(--font1);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -15,6 +26,8 @@ header{
     text-align: center;
 }
 header >h1{
+    font-family: var(--font2);
+    font-size: 7vw;
     padding-top: 50px;
     font-variant: small-caps;
 }
@@ -30,9 +43,12 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 section{
-    line-height: 2em;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    font-family: var(--font3);
+    font-weight: semi-bold;
+    font-size: 4vw;
+    line-height: 1em;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
     padding-left: 30px;
 }
 section.normal {
@@ -45,8 +61,10 @@ section.imagem {
     color: white;
 }
 section.imagem >p {
+    display: inline-block;
+    padding: 7px;
     font-style: italic;
-    width: 400px;
+    
     background-color: rgba(0, 0, 0, 0.253);
 }
 footer {
